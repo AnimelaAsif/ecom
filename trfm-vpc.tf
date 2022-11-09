@@ -12,7 +12,7 @@ resource "aws_vpc" "ans" {
 resource "aws_subnet" "ans-sn-1" {
   vpc_id     = aws_vpc.ans.id
   cidr_block = "10.0.0.0/24"
-  availability_zone = "us-west-1b"
+  availability_zone = "eu-west-2b"
   map_public_ip_on_launch = "true"
 
   tags = {
@@ -24,7 +24,7 @@ resource "aws_subnet" "ans-sn-1" {
 resource "aws_subnet" "ans-sn-2" {
   vpc_id     = aws_vpc.ans.id
   cidr_block = "10.0.1.0/24"
-  availability_zone = "us-west-1c"
+  availability_zone = "eu-west-2c"
   map_public_ip_on_launch = "true"
 
   tags = {
