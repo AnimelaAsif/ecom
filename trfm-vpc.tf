@@ -98,7 +98,7 @@ resource "aws_security_group" "ans_master_sg" {
   }
 
   tags = {
-    Name = "allow SSH"
+    Name = "ALL"
   }
 }
 
@@ -124,8 +124,8 @@ resource "aws_security_group" "ans_nodes_sg" {
     cidr_blocks      = ["0.0.0.0/0"]
   }
 
-  tags = 
-    Name = "allow SSH & http"
+  tags = {
+    Name = "ALL"
   }
 }
 
