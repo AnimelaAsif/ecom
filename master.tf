@@ -1,5 +1,5 @@
 # Ansible Master
-resource "aws_instance" "ans-master" {
+resource "aws_instance" "ans_master" {
   ami           = "ami-036e229aa5fa198ba"
   instance_type = "t2.micro"
   subnet_id = aws_subnet.ans-sn-1.id
