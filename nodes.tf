@@ -1,5 +1,5 @@
 # Ansible node1
-resource "aws_instance" "ans-n1" {
+resource "aws_instance" "ans_n1" {
   ami           = "ami-036e229aa5fa198ba"
   instance_type = "t2.micro"
   subnet_id = aws_subnet.ans-sn-1.id
@@ -13,7 +13,7 @@ resource "aws_instance" "ans-n1" {
 }
 
 # Ansible node2
-resource "aws_instance" "ans-n2" {
+resource "aws_instance" "ans_n2" {
   ami           = "ami-036e229aa5fa198ba"
   instance_type = "t2.micro"
   subnet_id = aws_subnet.ans-sn-1.id
