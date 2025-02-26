@@ -1,3 +1,0 @@
-# ecom!
-
-# testing git command
