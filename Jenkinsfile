@@ -7,7 +7,7 @@ pipeline {
                 sh "sudo cp -r /var/lib/jenkins/workspace/pipeline/* /var/www/html/"
             }
         }
-        stage('send a custom email'){
+        stage('send an email'){
             steps {
                 mail bcc: '', body: '''Completed all the sequential pipelines.
                 
